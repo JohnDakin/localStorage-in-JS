@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage</title>
+</head>
+<body>
+  <div id="stored"></div>
+  <script>
+    let message = "Hello storage";
+
+    localStorage.setItem("example", message);
+    // console.log(localStorage.getItem("example"));
+    if(true){
+      document.getElementById("stored").innerHTML = 
+      localStorage.getItem(localStorage.key(0));
+      //localStorage.getItem("example");
+    }
+
+    // console.log(localStorage.key(0));
+    // localStorage.removeItem("message");
+    localStorage.clear();
+    console.log(localStorage.getItem("message"));
+    
+  </script>
+</body>
+</html>
